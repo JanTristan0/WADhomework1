@@ -2,11 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  
+  <!-- Teeb lehe telefonis/responsive vaates õigesti skaleeruvaks -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PostIt - Add Post</title>
+
+  <!-- Ühendab selle HTML faili styles.css failiga -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  
+  <!-- Lehe header; navigatsiooniriba; avalehele viimise nupp; add posti nupp (aria current
+  näitab, et leht hetkel aktiivne); profiilipildi nupp kust läheb login lehele; profiilipilt -->
   <header class="site-header">
     <nav class="main-nav" aria-label="Main navigation">
       <a href="index.html">Home</a>
@@ -17,23 +24,31 @@
     </nav>
   </header>
 
+  <!-- Lehe põhisisu, uue postituse vormi ala ja pealkiri -->
   <main class="page-shell centered-page">
     <section class="form-card" aria-labelledby="add-post-title">
       <h1 id="add-post-title">Create a post</h1>
 
+      <!-- pärast vormi saatmist tagasi index.htmli, teksti sisestamise väli ja pealkiri,
+      tekstikasti suurus, algne tekst sees ja required, ehk väli peab täidetud olema-->
       <form action="index.html" method="get">
         <label class="form-field">
           <span>Post body</span>
           <textarea name="postBody" rows="6" placeholder="Write your post..." required></textarea>
         </label>
 
+        <!-- Faili/pildi valimise väli; failivälja nimi; input, ehk type="file" laseb
+        kasutajal faili valida ning accept=image lubab valida pildifaile -->
         <label class="form-field">
           <span>Select file</span>
           <input type="file" name="postImage" accept="image/*">
         </label>
 
+        <!-- Selgitab, et pilt ei ole kohustuslik -->
         <p class="form-note">The image is optional.</p>
 
+        <!-- Nupu sektsioon; type="submit" saadab vormi, seejärel varasemalt olnud 
+        action="index.html" viib kasutaja avalehele. -->
         <section class="form-actions" aria-label="Form actions">
           <button class="primary-button" type="submit">Create post</button>
         </section>
@@ -41,6 +56,7 @@
     </section>
   </main>
 
+  <!-- Lehe alumine osa ehk footer ja selle tekst -->
   <footer class="site-footer">
     <p>PostIt • Homework #1</p>
   </footer>
