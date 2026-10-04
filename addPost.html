@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PostIt - Add Post</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="addPost.html" aria-current="page">Add Post</a>
+      <a class="profile-link" href="login.html" aria-label="Open login page">
+        <img src="images/avatar.svg" alt="Profile">
+      </a>
+    </nav>
+  </header>
 
+  <main class="page-shell centered-page">
+    <section class="form-card" aria-labelledby="add-post-title">
+      <h1 id="add-post-title">Create a post</h1>
+
+      <form action="index.html" method="get">
+        <label class="form-field">
+          <span>Post body</span>
+          <textarea name="postBody" rows="6" placeholder="Write your post..." required></textarea>
+        </label>
+
+        <label class="form-field">
+          <span>Select file</span>
+          <input type="file" name="postImage" accept="image/*">
+        </label>
+
+        <p class="form-note">The image is optional.</p>
+
+        <section class="form-actions" aria-label="Form actions">
+          <button class="primary-button" type="submit">Create post</button>
+        </section>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>PostIt • Homework #1</p>
+  </footer>
+</body>
+</html>
