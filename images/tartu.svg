@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">Tartu town square illustration</title>
+  <desc id="desc">Colorful buildings around a town square with an autumn sky.</desc>
+  <rect width="800" height="450" fill="#b9d8f4"/>
+  <circle cx="665" cy="85" r="42" fill="#f6d365"/>
+  <rect y="300" width="800" height="150" fill="#b8a58d"/>
+  <polygon points="0,160 220,95 220,330 0,330" fill="#d97706"/>
+  <polygon points="220,130 390,85 390,330 220,330" fill="#f3f4f6"/>
+  <polygon points="390,110 575,145 575,330 390,330" fill="#c084fc"/>
+  <polygon points="575,130 800,185 800,330 575,330" fill="#93c5fd"/>
+  <g fill="#374151">
+    <rect x="38" y="205" width="38" height="55"/><rect x="105" y="185" width="38" height="55"/>
+    <rect x="260" y="175" width="38" height="55"/><rect x="325" y="160" width="38" height="55"/>
+    <rect x="435" y="175" width="38" height="55"/><rect x="505" y="190" width="38" height="55"/>
+    <rect x="625" y="205" width="38" height="55"/><rect x="700" y="225" width="38" height="55"/>
+  </g>
+  <text x="400" y="385" text-anchor="middle" font-family="Arial" font-size="44" font-weight="700" fill="#7f1d1d">TARTU</text>
+</svg>
